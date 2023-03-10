@@ -1,0 +1,80 @@
+* { box-sizing: border-box }
+:root { background: deepskyblue; color: #110111; }
+::selection { background: hotpink; color: indigo }
+
+.wox {
+  background-color: deepskyblue;
+  background-image: linear-gradient(.333turn, mediumpurple, mediumpurple 80%, transparent 80%, transparent);
+}
+
+.wux {
+  background-color: deepskyblue;
+  background-image: linear-gradient(.333turn, mediumpurple, mediumpurple 50%, transparent 50%, transparent);
+}
+
+.lux {
+  background-color: deepskyblue;
+  background-image: linear-gradient(.333turn, mediumpurple, mediumpurple 50%, transparent 50%, transparent);
+}
+
+.lix {
+  background-color: deepskyblue;
+  background-image: linear-gradient(.333turn, mediumpurple, mediumpurple 30%, transparent 30%, transparent);
+}
+
+.luv {
+  background-color: deepskyblue;
+  background-image: conic-gradient(mediumpurple, mediumpurple 50%, transparent 50%, transparent);
+}
+
+.bip { font-size: 1.236em }
+.bop { font-size: 1.382em }
+.bup { font-size: 1.618em }
+
+:any-link {
+  color: inherit;
+  cursor: grabbing;
+}
+
+:hover {
+  text-decoration-style: double;
+}
+
+:focus {
+  outline: thick double;
+  text-decoration-style: dotted;
+  background-image: linear-gradient(.666turn, deepskyblue, deepskyblue 50%, chartreuse 50%, chartreuse);
+}
+
+html {
+  font: max(2em, 3vw + 3vh) sans-serif;
+  line-height: 1.618;
+}
+
+body {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  margin: 0;
+  font: 2em monospace;
+  text-align: center;
+}
+
+a {
+  display: flex;
+  padding: 1em;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+@media (orientation: portrait) {
+  h1 {
+    width: 100%;
+    writing-mode: sideways-rl;
+    text-align: unset;
+  }
+}
